@@ -1,0 +1,13 @@
+@import '~/src/theme.scss';
+
+body {
+    margin: 0px;
+    padding: 0px
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+}

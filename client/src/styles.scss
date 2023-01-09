@@ -1,0 +1,10 @@
+@import '~/src/theme.scss';
+
+body {
+    background-color: $theme-background-color;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}

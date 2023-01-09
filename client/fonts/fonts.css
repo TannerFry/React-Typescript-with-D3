@@ -1,0 +1,69 @@
+/**
+ * Fonts compiled using https://www.npmjs.com/package/google-fonts-offline
+ */
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: url(Ubuntu_400_normal.eot); /* http://fonts.gstatic.com/s/ubuntu/v13/4iCs6KVjbNBYlgoKfw7y.eot */
+    src: local('☺'),
+        url(Ubuntu_400_normal.eot?#iefix) format('embedded-opentype'), /* http://fonts.gstatic.com/s/ubuntu/v13/4iCs6KVjbNBYlgoKfw7y.eot */
+        url(Ubuntu_400_normal.woff2) format('woff2'), /* http://fonts.gstatic.com/s/ubuntu/v13/4iCs6KVjbNBYlgoKfw72.woff2 */
+        url(Ubuntu_400_normal.woff) format('woff'), /* http://fonts.gstatic.com/s/ubuntu/v13/4iCs6KVjbNBYlgoKfw7w.woff */
+        url(Ubuntu_400_normal.ttf) format('truetype'), /* http://fonts.gstatic.com/s/ubuntu/v13/4iCs6KVjbNBYlgoKfw7znU6AFw.ttf */
+        url(Ubuntu_400_normal.svg#Ubuntu_400_normal) format('svg'); /* http://fonts.gstatic.com/l/font?kit=4iCs6KVjbNBYlgoKfw7x&skey=7e59fc036a1a8481&v=v13#Ubuntu */
+}
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    src: url(Ubuntu_300_normal.eot); /* {{embedded-opentype-gf-url}} */
+    src: local('☺'),
+        url(Ubuntu_300_normal.eot?#iefix) format('embedded-opentype'), /* {{embedded-opentype-gf-url}} */
+        url(Ubuntu_300_normal.woff2) format('woff2'), /* http://fonts.gstatic.com/s/ubuntu/v13/4iCv6KVjbNBYlgoC1CzjsGyN.woff2 */
+        url(Ubuntu_300_normal.woff) format('woff'), /* http://fonts.gstatic.com/s/ubuntu/v13/4iCv6KVjbNBYlgoC1CzjsGyL.woff */
+        url(Ubuntu_300_normal.ttf) format('truetype'), /* http://fonts.gstatic.com/s/ubuntu/v13/4iCv6KVjbNBYlgoC1CzjsGyIPYZvgw.ttf */
+        url(Ubuntu_300_normal.svg#Ubuntu_300_normal) format('svg'); /* {{svg-gf-url}} */
+}
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    src: url(Ubuntu_700_normal.eot); /* {{embedded-opentype-gf-url}} */
+    src: local('☺'),
+        url(Ubuntu_700_normal.eot?#iefix) format('embedded-opentype'), /* {{embedded-opentype-gf-url}} */
+        url(Ubuntu_700_normal.woff2) format('woff2'), /* http://fonts.gstatic.com/s/ubuntu/v13/4iCv6KVjbNBYlgoCxCvjsGyN.woff2 */
+        url(Ubuntu_700_normal.woff) format('woff'), /* http://fonts.gstatic.com/s/ubuntu/v13/4iCv6KVjbNBYlgoCxCvjsGyL.woff */
+        url(Ubuntu_700_normal.ttf) format('truetype'), /* http://fonts.gstatic.com/s/ubuntu/v13/4iCv6KVjbNBYlgoCxCvjsGyIPYZvgw.ttf */
+        url(Ubuntu_700_normal.svg#Ubuntu_700_normal) format('svg'); /* {{svg-gf-url}} */
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(Material+Icons_400_normal.eot); /* http://fonts.gstatic.com/s/materialicons/v47/flUhRq6tzZclQEJ-Vdg-IuiaDsNY.eot */
+    src: local('☺'),
+        url(Material+Icons_400_normal.eot?#iefix) format('embedded-opentype'), /* http://fonts.gstatic.com/s/materialicons/v47/flUhRq6tzZclQEJ-Vdg-IuiaDsNY.eot */
+        url(Material+Icons_400_normal.woff2) format('woff2'), /* http://fonts.gstatic.com/s/materialicons/v47/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2 */
+        url(Material+Icons_400_normal.woff) format('woff'), /* http://fonts.gstatic.com/s/materialicons/v47/flUhRq6tzZclQEJ-Vdg-IuiaDsNa.woff */
+        url(Material+Icons_400_normal.ttf) format('truetype'), /* http://fonts.gstatic.com/s/materialicons/v47/flUhRq6tzZclQEJ-Vdg-IuiaDsNZIhQ8tQ.ttf */
+        url(Material+Icons_400_normal.svg#Material+Icons_400_normal) format('svg'); /* http://fonts.gstatic.com/l/font?kit=flUhRq6tzZclQEJ-Vdg-IuiaDsNb&skey=4fbfe4498ec2960a&v=v47#MaterialIcons */
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
