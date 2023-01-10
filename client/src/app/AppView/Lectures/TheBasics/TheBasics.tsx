@@ -24,15 +24,11 @@ export default class TheBasics extends React.Component<{}, {}> {
             // Step 3 - Load our fake data
             .data(this.fakeData)
             // Step 4 - Perform join statement
-            .join(
-                // enter phase - new data with no corresponding elements
-                (enter) => enter.append('circle').attr('class', 'new'),
-                // update phase - existing data has corresponding elements so update class name
-                (update) => update.attr('class', 'updated'),
-                // eslint-disable-next-line max-len
-                // exit phase - previously existing data with corresponding element has now been removed, so the corresponding element needs to be removed
-                (exit) => exit.remove(),
-            );
+            .join('circle')
+            .attr('r', (value) => value) // setting attribute based on value
+            .attr('cx', (value) => value * 2) // setting attribute based on value
+            .attr('cy', (value) => value * 2) // setting attribute based on value
+            .attr('stroke', 'red');
     }
 
     updateFakeData = () => {
