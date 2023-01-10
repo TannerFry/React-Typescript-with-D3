@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { observer } from 'mobx-react';
-import TheBasics from './Lectures/TheBasics/TheBasics';
 
 import './AppView.scss';
+import AxesAndScales from './Lectures/AxesAndScales/AxesAndScales';
 
 interface IAppViewState{
 }
@@ -14,7 +14,7 @@ export default class AppView extends React.Component<{}, IAppViewState> {
     render() {
         return (
             <div>
-                <TheBasics />
+                <AxesAndScales />
             </div>
         );
     }
