@@ -8,29 +8,38 @@ import './AxesAndScales.scss';
 @observer
 export default class AxesAndScales extends React.Component<{}, {}> {
     @observable svgRef = React.createRef<SVGSVGElement>();
-    @observable fakeData: number[] = [25, 30, 45, 60, 20]
+    @observable fakeData: number[] = [25, 30, 45, 60, 20, 40, 70]
 
     componentDidMount() {
         this.updateSVG();
     }
 
     updateSVG = () => {
-        // Step 1 - Select SVG element
         const svg = d3.select(this.svgRef.current);
-        // Step 2 - Create d3.line() mapper
+
+        // Create x-axis scaler
+        const xScale = d3
+            .scaleLinear()
+            .domain([0, this.fakeData.length - 1])
+            .range([0, 300]);
+
+        // Create x-axis
+        const xAxis = d3.axisBottom(xScale);
+
+        svg.append('g')
+            .attr('class', 'xAxis')
+            .attr('transform', 'translate(0, 100)')
+            .call(xAxis);
+
         const line = d3.line<number>()
-            .x((value, index) => index * 50)
+            .x((value, index) => xScale(index))
             .y((value, index) => value)
             .curve(d3.curveCardinal);
         svg
-            // Step 3 - Select all existing path elements
             .selectAll('path')
-            // Step 4 - Bind fake data
             .data([this.fakeData])
             .join('path')
-            // Step 5 - Add d attribute
             .attr('d', (value) => line(value))
-            // Step 6 - Add styling
             .attr('fill', 'none')
             .attr('stroke', 'blue');
     }
@@ -54,6 +63,9 @@ export default class AxesAndScales extends React.Component<{}, {}> {
             <>
                 <svg ref={this.svgRef} style={{ border: '1px solid black' }} />
 
+                <br />
+                <br />
+                <br />
                 <br />
 
                 <button type="button" onClick={this.updateFakeData}>
