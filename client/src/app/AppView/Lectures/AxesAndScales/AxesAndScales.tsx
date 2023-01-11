@@ -28,17 +28,18 @@ export default class AxesAndScales extends React.Component<{}, {}> {
 
         svg.append('g')
             .attr('class', 'xAxis')
-            .attr('transform', 'translate(0, 100)')
+            .attr('transform', 'translate(0, 150)')
             .call(xAxis);
 
         const line = d3.line<number>()
             .x((value, index) => xScale(index))
-            .y((value, index) => value)
+            .y((value) => value)
             .curve(d3.curveCardinal);
         svg
-            .selectAll('path')
+            .selectAll('.line')
             .data([this.fakeData])
             .join('path')
+            .attr('class', 'line')
             .attr('d', (value) => line(value))
             .attr('fill', 'none')
             .attr('stroke', 'blue');
@@ -61,7 +62,7 @@ export default class AxesAndScales extends React.Component<{}, {}> {
     render() {
         return (
             <>
-                <svg ref={this.svgRef} style={{ border: '1px solid black' }} />
+                <svg ref={this.svgRef} style={{ border: '1px solid black', overflow: 'visible' }} />
 
                 <br />
                 <br />
